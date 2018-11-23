@@ -9,9 +9,7 @@
         android:id="@+id/goButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_margin="@dimen/margin"
         android:text="@string/go"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,10 +19,7 @@
         android:id="@+id/goTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/start_service"
+        android:layout_margin="@dimen/margin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,7 +28,7 @@
         android:id="@+id/ourResultTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_margin="@dimen/margin"
         android:text="@string/our_result"
         app:layout_constraintEnd_toStartOf="@+id/goButton"
         app:layout_constraintTop_toBottomOf="@+id/goButton" />
@@ -42,7 +37,7 @@
         android:id="@+id/otherResultTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_margin="@dimen/margin"
         android:text="@string/other_result"
         app:layout_constraintEnd_toStartOf="@+id/goButton"
         app:layout_constraintTop_toBottomOf="@+id/ourResultTextView" />
@@ -51,7 +46,7 @@
         android:id="@+id/ourResultValueTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_margin="@dimen/margin"
         app:layout_constraintTop_toBottomOf="@+id/goButton"
         app:layout_constraintStart_toEndOf="@+id/goButton" />
 
@@ -59,7 +54,7 @@
         android:id="@+id/otherResultValueTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_margin="@dimen/margin"
         app:layout_constraintStart_toEndOf="@+id/goButton"
         app:layout_constraintTop_toBottomOf="@+id/ourResultValueTextView" />
 </android.support.constraint.ConstraintLayout>

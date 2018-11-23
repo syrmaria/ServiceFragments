@@ -2,8 +2,8 @@
     <string name="app_name">ServiceFragments</string>
     <string name="our_result">Our result</string>
     <string name="other_result">Other result</string>
-    <string name="start_service">Let\'s start service</string>
+    <string name="start_service">Get number from started service</string>
     <string name="go">Go!</string>
-    <string name="bind_service">Let\'s bind service</string>
+    <string name="bind_service">Get number from binded service</string>
     <string name="result_template">= %1$d</string>
 </resources>

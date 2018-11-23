@@ -6,14 +6,14 @@ import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
-import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import java.util.Random;
 
 public class SomeService extends Service {
     public static final String TAG = "MySomeService";
+    public static final String ACTION ="com.syrovama.servicefragments.serviceresult";
+    static final String EXTRA_RESULT = "RESULT";
     private static final Random RANDOM = new Random();
-    static final String START_RESULT = "RESULT";
 
     private final IBinder mBinder = new SomeBinder();
 
@@ -33,8 +33,8 @@ public class SomeService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.d(TAG, "Got intent " + intent);
         int nextNumber = RANDOM.nextInt();
-        Intent nextNumberIntent = new Intent("myaction");
-        nextNumberIntent.putExtra(START_RESULT, nextNumber);
+        Intent nextNumberIntent = new Intent(ACTION);
+        nextNumberIntent.putExtra(EXTRA_RESULT, nextNumber);
         sendBroadcast(nextNumberIntent);
         Log.d(TAG, "Broadcast sent");
         return START_NOT_STICKY;
